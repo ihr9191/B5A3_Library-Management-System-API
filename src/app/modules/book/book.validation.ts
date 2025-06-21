@@ -1,7 +1,3 @@
-// src/modules/book/book.validation.ts
-// This file defines the validation schemas for creating and updating a book using Zod.
-// It uses Zod to enforce the structure and types of the data being validated.
-
 import { z } from "zod";
 
 export const genreEnum = z.enum([

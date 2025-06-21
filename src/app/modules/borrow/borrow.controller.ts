@@ -1,8 +1,6 @@
-// src/modules/borrow/borrow.controller.ts
 import { Request, Response, NextFunction } from "express";
 import { sendResponse } from "../../utils/sendResponse";
 import { BorrowService } from "./borrow.service";
-// import { createBorrowZodSchema } from "./borrow.validation";
 
 export const borrowBook = async (
   req: Request,

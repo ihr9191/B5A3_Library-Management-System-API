@@ -1,4 +1,3 @@
-// src/modules/borrow/borrow.service.ts
 import { Borrow } from "./borrow.model";
 import { Book } from "../book/book.model";
 

@@ -1,7 +1,3 @@
-// This file defines the Mongoose model for the Book entity.
-// It includes the schema definition, methods, and exports the model for use in other parts of the application.
-// src/modules/book/book.model.ts
-
 import { model, Schema } from "mongoose";
 import { IBookDocument } from "./book.interface";
 
