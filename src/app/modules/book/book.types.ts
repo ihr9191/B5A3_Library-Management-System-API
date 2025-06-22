@@ -1,10 +1,11 @@
 export type Genre =
-  | "FICTION"
-  | "NON_FICTION"
-  | "SCIENCE"
-  | "HISTORY"
-  | "BIOGRAPHY"
-  | "FANTASY";
+  "FICTION" 
+  |"MYSTERY"
+  |"ROMANCE"
+  |"THRILLER" 
+  |"HORROR"
+  |"ADVENTURE" 
+  |"POETRY",
 
   export type IBookQuery = {
   filter ?: Genre;
