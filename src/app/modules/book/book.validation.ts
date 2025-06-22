@@ -2,11 +2,12 @@ import { z } from "zod";
 
 export const genreEnum = z.enum([
   "FICTION",
-  "NON_FICTION",
-  "SCIENCE",
-  "HISTORY",
-  "BIOGRAPHY",
-  "FANTASY",
+  "MYSTERY",
+  "ROMANCE",
+  "THRILLER",
+  "HORROR",
+  "ADVENTURE",
+  "POETRY",
 ]);
 
 export const createBookZodSchema = z.object({
