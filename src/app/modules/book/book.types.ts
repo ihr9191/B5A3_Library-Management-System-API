@@ -5,7 +5,7 @@ export type Genre =
   |"THRILLER" 
   |"HORROR"
   |"ADVENTURE" 
-  |"POETRY",
+  |"POETRY"
 
   export type IBookQuery = {
   filter ?: Genre;
