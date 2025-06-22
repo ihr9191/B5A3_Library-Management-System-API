@@ -1,7 +1,4 @@
-// src/modules/book/book.controller.ts
 import { Request, Response, NextFunction } from "express";
-
-// import { createBookZodSchema, updateBookZodSchema } from "./book.validation";
 import { sendResponse } from "../../utils/sendResponse";
 import { BookService } from "./book.service";
 
@@ -11,7 +8,6 @@ export const createBook = async (
   next: NextFunction
 ) => {
   try {
-    // const parsed = createBookZodSchema.parse(req.body);
     const result = await BookService.createBook(req.body);
     sendResponse(res, {
       statusCode: 201,
@@ -73,7 +69,6 @@ export const updateBook = async (
   next: NextFunction
 ) => {
   try {
-    // const parsed = updateBookZodSchema.parse(req.body);
     const result = await BookService.updateBook(req.params.bookId, req.body);
     if (!result) {
       return sendResponse(res, {
