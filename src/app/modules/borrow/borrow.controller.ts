@@ -8,7 +8,6 @@ export const borrowBook = async (
   next: NextFunction
 ) => {
   try {
-    // const parsed = createBorrowZodSchema.parse(req.body);
     const parsed = req.body;
     const borrowed = await BorrowService.borrowBook(
       parsed.book,
@@ -25,7 +24,6 @@ export const borrowBook = async (
     next(error);
   }
 };
-
 export const getBorrowSummary = async (
   req: Request,
   res: Response,
