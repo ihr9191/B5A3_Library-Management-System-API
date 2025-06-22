@@ -16,13 +16,12 @@ const bookSchema = new Schema<IBookDocument>(
       required: [true, "Genre is required"],
       enum: {
         values: [
-           "FICTION",
-           "MYSTERY",
-           "ROMANCE",
-           "THRILLER",
-           "HORROR",
-           "ADVENTURE",
-           "POETRY",
+           "FICTION"
+           "NON_FICTION",
+           "SCIENCE",
+           "HISTORY",
+           "BIOGRAPHY",
+           "FANTASY";
         ],
         message:
           "Genre must be one of: FICTION, NON_FICTION, SCIENCE, HISTORY, BIOGRAPHY, FANTASY",
